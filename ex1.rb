@@ -24,3 +24,10 @@ puts sparky
 bob = HumanBeing.new
 bob.speak("Hello!")         # => Hello!
 puts bob
+
+
+puts "---GoodDog ancestors---"
+puts GoodDog.ancestors
+puts ''
+puts "---HumanBeing ancestors---"
+puts HumanBeing.ancestors
