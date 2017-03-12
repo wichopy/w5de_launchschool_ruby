@@ -12,14 +12,12 @@ class GoodDog
     "#{@name} says Arf!"
   end
 
-#Getter method.
-  def get_name
+  def name                  # This was renamed from "get_name"
     @name
   end
 
-#Seter method for set name
-  def set_name=(name)
-    @name = name
+  def name=(n)              # This was renamed from "set_name="
+    @name = n
   end
 end
 
@@ -30,12 +28,10 @@ fido = GoodDog.new("Fido")
 # puts fido
 puts fido.speak
 
-puts sparky.get_name
-
-sparky.set_name = "spartacus"
-
-puts sparky.get_name
-#no method error, method doesnt exist or is unavailable.
-#Need to create a method to get this value.
 puts sparky.name
+
+sparky.name = "spartacus"
+
+puts sparky.name
+
 
